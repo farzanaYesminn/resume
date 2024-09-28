@@ -1,0 +1,138 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{geometry}
+\usepackage{ragged2e}
+\usepackage[unicode, colorlinks, linkcolor=RoyalBlue, urlcolor=RoyalBlue, citecolor=RoyalBlue]{hyperref}
+\definecolor{RoyalBlue}{rgb}{0.25,0.41,0.88}
+
+% Page dimensions
+\geometry{
+    left=1.27cm,
+    right=1.27cm,
+    top=1.27cm,
+    bottom=1.27cm,
+}
+
+% Footer settings
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{\footnotesize Updated On: \today}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\setlength{\footskip}{15pt} % Add this line to set a suitable value for \footskip
+
+\urlstyle{same}
+
+% Text alignment
+\RaggedRight{}
+\setlength{\tabcolsep}{0in}
+
+% Section title formatting
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\Large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{\item[$\bullet$] \small{#1 \vspace{-2pt}}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0pt, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeSubheading}[5]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\href{#4}{#1}} & #2 \\
+    \textit{\small#3} & \textit{\small #5} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+% CV Start
+\begin{document}
+
+    % Title
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+        \textsc{\LARGE Farzana Yesmin} & \\
+        Road-20, Sector-13 & Mobile: +880 1990-771124 \\
+        Uttara, Dhaka & Portfolio: \href{https://farzanayesminn.github.io/}{farzanayesminn.github.io} \\
+        Bangladesh & Email: \href{mailto:yesminfarzana.cse@gmail.com}{yesminfarzana.cse@gmail.com} \\
+    \end{tabular*}
+
+    % Education
+    \section{Education}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+        {Daffodil International University}{Dhaka, Bangladesh}
+        {Bachelor of Science in Computer Science and Engineering; CGPA: \textbf{3.63}}{https://daffodilvarsity.edu.bd/}{Jan. 2019 -- Dec. 2022}
+    \resumeSubheading
+        {Universiti Kebangsaan Malaysia}{Malaysia}
+        {Exchange Program from Erusmus Mundus Scholarship}{https://www.ukm.my/portalukm/}{Mar. 2022 -- Aug. 2022}
+    \resumeSubHeadingListEnd
+
+    % Experience
+    \section{Experience}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+    {RedGreen Technology Ltd.}{Dhaka, Bangladesh}
+    {Jr. Software Engineer}{https://www.google.com/}{Jul. 2023 - Jun. 2024}
+\resumeItemListStart
+    \resumeItem{Developed responsive UIs using React and Angular for seamless user experience across devices.}
+    \resumeItem{Collaborated with design and backend teams to implement interactive web components.}
+    \resumeItem{Optimized front-end code, reducing page load times through refactoring and asset management.}
+\resumeItemListEnd
+\resumeSubheading
+    {Daffodil International University}{Dhaka, Bangladesh}
+    {Student Associate, Dept. of International Affairs}{https://daffodilvarsity.edu.bd/}{February 2022 – May 2022}
+\resumeItemListStart
+    \resumeItem{Assisted in organizing international exchange programs and events.}
+    \resumeItem{Handled administrative tasks related to student mobility and foreign collaborations.}
+    \resumeItem{Supported coordination between international students and the university.}
+\resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+    % Projects
+    \section{Projects}
+    \resumeSubHeadingListStart
+    \resumeSubheading
+        {ReFactory}{}
+        {RedGreen Technology Ltd.}{https://www.refactory.ae/}{}
+    \resumeItemListStart
+        \resumeItem{Utilized React.js to develop dynamic and responsive user interfaces, ensuring a seamless and engaging experience for users.}
+        \resumeItem{Handled API integrations to fetch and display real-time data, enhancing the functionality and interactivity of the web application.}
+        \resumeItem{Implemented responsive design principles, optimizing the application for various devices and screen sizes, while maintaining performance and usability.}
+    \resumeItemListEnd
+    \resumeSubheading
+        {FruitBurst}{}
+        {Pet Project.}{https://farzanayesminn.github.io/FruitBrust_HTML-TailwindCSS_Responsive/}{}
+    \resumeItemListStart
+        \resumeItem{Developed a responsive website showcasing a variety of fruits, utilizing HTML and Tailwind CSS to ensure an appealing and user-friendly interface.}
+        \resumeItem{Implemented interactive features such as hover effects and animations, enhancing user engagement and providing a delightful browsing experience.}
+        \resumeItem{Optimized the website for mobile devices, ensuring seamless functionality across various screen sizes and improving accessibility for all users.}
+    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+    \section{Publications}
+    \textbf{Yesmin, F.}, Rahman, M., Saifuzzaman, M., \& Moon, N. N. (2022). Pandemic Effect on Education System Among University Students. In International Conference on Deep Learning, Artificial Intelligence and Robotics (pp. 157-168). Springer, Cham.
+
+    % Programming Skills
+    \section{Programming Skills}
+    \resumeSubHeadingListStart
+    \item{
+        \textbf{Core Skills:} Frontend Development, Responsive Web Design, UI/UX Design \\
+        \textbf{Programming Languages:} JavaScript, HTML, CSS \\
+        \textbf{Frameworks/Libraries:} React, Tailwind CSS, Bootstrap \\
+        \textbf{Technical Tools:} Git, Figma, Chrome DevTools \\
+        \textbf{Backend Knowledge:} Basic understanding of Node.js, REST API
+    }
+    \resumeSubHeadingListEnd
+
+\end{document}
+ 
